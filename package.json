@@ -13,5 +13,9 @@
   "scripts": {
     "build": "tsm rules.ts",
     "watch": "nodemon --exec yarn build -e ts"
+  },
+  "volta": {
+    "node": "20.12.2",
+    "yarn": "1.22.22"
   }
 }

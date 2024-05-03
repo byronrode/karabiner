@@ -33,7 +33,7 @@ const rules: KarabinerRules[] = [
         ],
         to_if_alone: [
           {
-            key_code: "escape",
+            key_code: "caps_lock",
           },
         ],
         type: "basic",
@@ -56,17 +56,9 @@ const rules: KarabinerRules[] = [
     ],
   },
   ...createHyperSubLayers({
-    spacebar: open(
-      "raycast://extensions/stellate/mxstbr-commands/create-notion-todo"
-    ),
     // b = "B"rowse
     b: {
       t: open("https://twitter.com"),
-      // Quarterly "P"lan
-      p: open("https://qrtr.ly/plan"),
-      y: open("https://news.ycombinator.com"),
-      f: open("https://facebook.com"),
-      r: open("https://reddit.com"),
     },
     // o = "Open" applications
     o: {
@@ -78,11 +70,8 @@ const rules: KarabinerRules[] = [
       s: app("Slack"),
       e: app("Superhuman"),
       n: app("Notion"),
-      t: app("Terminal"),
+      t: app("iTerm"),
       // Open todo list managed via *H*ypersonic
-      h: open(
-        "notion://www.notion.so/stellatehq/7b33b924746647499d906c55f89d5026"
-      ),
       z: app("zoom.us"),
       // "M"essages
       m: app("Texts"),
@@ -94,9 +83,6 @@ const rules: KarabinerRules[] = [
       a: app("iA Presenter"),
       // "W"hatsApp has been replaced by Texts
       w: open("Texts"),
-      l: open(
-        "raycast://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink"
-      ),
     },
 
     // w = "Window" via rectangle.app
@@ -304,9 +290,6 @@ const rules: KarabinerRules[] = [
     // r = "Raycast"
     r: {
       n: open("raycast://script-commands/dismiss-notifications"),
-      l: open(
-        "raycast://extensions/stellate/mxstbr-commands/create-mxs-is-shortlink"
-      ),
       e: open(
         "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
       ),
